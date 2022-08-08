@@ -18,6 +18,7 @@ Console.WriteLine(less.Repeat("Test", 5));
 Console.WriteLine(less.RepeatR("Test", 5, "Test"));
 less.myString = "Test";
 Console.WriteLine(less.RepeatR(less.myString, 5));
+Console.WriteLine(less.RepeatR1("Test", 5));
 
 class Lesson4 {
     public string myString = "";
@@ -85,6 +86,17 @@ class Lesson4 {
        if (n > 1)
         {
             return RepeatR(str + myString, --n);
+        }
+
+        return str;
+    }
+
+    public string RepeatR1(string str, int n)
+    {
+
+        if (n > 1)
+        {
+            return str + RepeatR1(str, --n);
         }
 
         return str;
