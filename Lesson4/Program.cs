@@ -80,7 +80,7 @@ class Lesson4 {
         return str;
     }
 
-    public string RepeatR(string str, int n)
+    public string RepeatR(string str, int n) // naming not so good
     {
        
        if (n > 1)
@@ -91,7 +91,7 @@ class Lesson4 {
         return str;
     }
 
-    public string RepeatR1(string str, int n)
+    public string RepeatR1(string str, int n)//naming not so good
     {
 
         if (n > 1)
@@ -102,3 +102,4 @@ class Lesson4 {
         return str;
     }
 }
+//checked
